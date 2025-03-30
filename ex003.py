@@ -4,7 +4,6 @@
 import time
 
 numero = int(input("Digite o número que você queira fazer a contagem regressiva: "))
-numero += 1
-for i in range(1, numero):
-    print(f"Estamos no número {i}, faltam {numero - i - 1} números!")
+for i in range(numero, 0, -1):
+    print(f"Estamos no número {i}, faltam {i - 1} números!")
     time.sleep(1)
